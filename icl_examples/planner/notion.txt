@@ -1,0 +1,24 @@
+Example 1:
+User query: Retrieve a page with page id "137ed119db3c48fe973e426f4746adcb"
+Plan step 1: Search a page with page id "137ed119db3c48fe973e426f4746adcb"
+API calling 1: GET v1/pages/137ed119db3c48fe973e426f4746adcb with no parameters
+API response: Page with page id "137ed119db3c48fe973e426f4746adcb" has been successfully retrieved.
+Thought: I have finished the execution plan and fetched the details with page id "137ed119db3c48fe973e426f4746adcb"
+Final Answer: I have retrieved the details of page with page id "137ed119db3c48fe973e426f4746adcb"
+
+Example 2:
+User query: Add a comment "Hello world" to the page with id "6607ea23df6c4e42afc75aa5353a2329".
+Plan step 1: Add a comment "Hello world" to the page with id "6607ea23df6c4e42afc75aa5353a2329".
+API calling 1: POST /v1/comments with request body {"parent": {"page_id": "6607ea23df6c4e42afc75aa5353a2329"},"rich_text": [{"text": {"content": "Hello world"}}]}
+API response: The comment "Hello world" has been added to the page with id "6607ea23df6c4e42afc75aa5353a2329" successfully.
+Thought: I have finished the execution plan and added the comment to the page.
+Final Answer: I have added a comment "Hello world" to the page with id "6607ea23df6c4e42afc75aa5353a2329".
+
+Example 3:
+User query: Create a new page in the database with id "06417f69834e4ce48673933612028ec9" with the URL "Tuscan Kale" and Title "Tuscan Kale".
+Plan step 1: Create a new page in the database with id "06417f69834e4ce48673933612028ec9" with the URL "Tuscan Kale" and Title "Tuscan Kale".
+API calling 1: POST /v1/pages with request body {"parent": { "database_id": "06417f69834e4ce48673933612028ec9" },"properties": {"URL": {"title": [{"text": {"content": "Tuscan Kale"}}]},"Title": {"rich_text": [{"text": {"content": "Tuscan Kale"}}]}}}
+API response: A new page with the URL "Tuscan Kale" and Title "Tuscan Kale" has been created successfully in the database with id "06417f69834e4ce48673933612028ec9".
+Thought: I have finished the execution plan and created a new page in the database.
+Final Answer: I have created a new page with the URL "Tuscan Kale" and Title "Tuscan Kale" in the database with id "06417f69834e4ce48673933612028ec9".
+

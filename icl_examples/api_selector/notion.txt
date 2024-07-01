@@ -1,0 +1,18 @@
+Example 1:
+Background: No background
+User query: List all users.
+API calling 1: GET /v1/users with no parameters.
+API response: User Details fetched successfully
+
+Example 2:
+Background: The database "Project A" has an id of 06417f69834e4ce48673933612028ec9.
+User query: Query the database "Project A".
+API calling 1: POST /v1/databases/06417f69834e4ce48673933612028ec9/query with no parameters.
+API response: Database with id "06417f69834e4ce48673933612028ec9" has queried successfully.
+
+Example 3:
+Background: No background
+User query: Search all parent or child pages and databases 
+API calling 1: POST v1/search with no parameters
+API response: All the pages and databases have been successfully fetched 
+
